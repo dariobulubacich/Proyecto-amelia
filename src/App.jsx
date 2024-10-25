@@ -17,8 +17,6 @@ function App() {
 
         <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
 
-        <Route path="/login" element={<h1>Login</h1>} />
-
         <Route path="*" element={<h2>Pagina no existe</h2>} />
       </Routes>
     </BrowserRouter>
