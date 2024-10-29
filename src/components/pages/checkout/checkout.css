@@ -1,0 +1,8 @@
+.inputs {
+  display: flex;
+  padding: 50px;
+}
+.btn {
+  background-color: lightpink;
+  padding-left: 15px;
+}
