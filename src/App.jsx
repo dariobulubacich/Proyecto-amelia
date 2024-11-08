@@ -5,11 +5,12 @@ import { Navbar } from "./components/layout/navbar/Navbar";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import Checkout from "./components/pages/checkout/Checkout";
 import { CartContextProvider } from "./context/CartContext";
-// import { PaginaNotFount } from "./components/pages/Error/PaginaNotFound";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <BrowserRouter>
+      <Toaster duration={2000} richColors position="top-center" />
       <CartContextProvider>
         <Navbar />
         <Routes>

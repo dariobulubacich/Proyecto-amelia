@@ -1,5 +1,4 @@
 const ModalCustom = ({ title, children }) => {
-  console.log(children);
   return (
     <div
       style={{

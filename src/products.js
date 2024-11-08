@@ -1,14 +1,14 @@
 export const products = [
-  {
-    id: "1",
-    title: "Muñeco Tiny",
-    price: 4200,
-    stock: 5,
-    imageUrl:
-      "https://res.cloudinary.com/di378vek5/image/upload/v1728056110/WhatsApp_Image_2024-09-27_at_09.52.53_nxmppj.jpg",
-    description: "viene con cuna",
-    category: "Nenas",
-  },
+  // {
+  //   id: "1",
+  //   title: "Muñeco Tiny",
+  //   price: 4200,
+  //   stock: 5,
+  //   imageUrl:
+  //     "https://res.cloudinary.com/di378vek5/image/upload/v1728056110/WhatsApp_Image_2024-09-27_at_09.52.53_nxmppj.jpg",
+  //   description: "viene con cuna",
+  //   category: "Nenas",
+  // },
   {
     id: "2",
     title: "Muñeco Cariñito",
@@ -29,16 +29,16 @@ export const products = [
     description: "2 en 1 jugos helados",
     category: "Nenas",
   },
-  {
-    id: "4",
-    title: "Peluche Dinosaurio",
-    price: 6000,
-    stock: 15,
-    imageUrl:
-      "https://res.cloudinary.com/di378vek5/image/upload/v1728056109/WhatsApp_Image_2024-09-27_at_09.52.55_2_ltxc9p.jpg",
-    description: "Peluches varios colores",
-    category: "Peluches",
-  },
+  // {
+  //   id: "4",
+  //   title: "Peluche Dinosaurio",
+  //   price: 6000,
+  //   stock: 15,
+  //   imageUrl:
+  //     "https://res.cloudinary.com/di378vek5/image/upload/v1728056109/WhatsApp_Image_2024-09-27_at_09.52.55_2_ltxc9p.jpg",
+  //   description: "Peluches varios colores",
+  //   category: "Peluches",
+  // },
   {
     id: "5",
     title: "Peluche Osos Rosas",

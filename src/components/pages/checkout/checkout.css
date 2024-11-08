@@ -1,8 +1,43 @@
-.inputs {
-  display: flex;
-  padding: 50px;
+.h2-compra {
+  padding: 100px;
+  text-align: center;
+  color: green;
+  width: 50%;
+  margin: auto;
+  gap: 20px;
 }
+
+.div-form {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+
+.imputs {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #070707;
+  border-radius: 4px;
+}
+
+.div-btn {
+  display: flex;
+  padding: 30px;
+  gap: 100px;
+  justify-content: center;
+}
+
 .btn {
-  background-color: lightpink;
-  padding-left: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
