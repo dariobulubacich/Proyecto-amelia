@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 export const CartWidget = () => {
-  const { cart } = useContext(CartContext); // siempre devuelve el objeto del value
+  const { cart } = useContext(CartContext);
   return (
     <Link to="/cart">
       <FaCartArrowDown />

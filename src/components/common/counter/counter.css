@@ -1,0 +1,17 @@
+.div-counter {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.button-counter {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

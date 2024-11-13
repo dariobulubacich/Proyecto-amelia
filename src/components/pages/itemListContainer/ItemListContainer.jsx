@@ -3,10 +3,9 @@ import { useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { db } from "../../../firebaseConfig";
-import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
-import { products } from "../../../products";
 
 export const ItemListContainer = () => {
   const { name } = useParams();
@@ -38,19 +37,9 @@ export const ItemListContainer = () => {
     );
   }
 
-  const funcionParaAgregar = () => {
-    const productsCollection = collection(db, "products");
-    addDoc(productsCollection, { price: 123, title: "123" });
-
-    products.forEach((product) => {
-      addDoc(productsCollection, product);
-    });
-  };
-
   return (
     <div>
       <ItemList items={items} />
-      <button onClick={funcionParaAgregar}>Cargar productos varios</button>
     </div>
   );
 };

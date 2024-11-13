@@ -3,13 +3,7 @@ import "./checkout.css";
 import { CartContext } from "../../../context/CartContext";
 
 import { db } from "../../../firebaseConfig";
-import {
-  addDoc,
-  collection,
-  deleteDoc,
-  doc,
-  updateDoc,
-} from "firebase/firestore";
+import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 
 const Checkout = () => {
   const { cart, getTotalAmount, resetCart } = useContext(CartContext);
@@ -28,7 +22,7 @@ const Checkout = () => {
 
     const order = {
       buyer: userInfo,
-      items: cart, //[ {} {} {}]
+      items: cart,
       total,
     };
 
@@ -53,12 +47,6 @@ const Checkout = () => {
   if (orderId) {
     return <h2 className="h2-compra">Tu ticket de compra es : {orderId}</h2>;
   }
-
-  const deleteById = (id) => {
-    // refColl
-    // refDoc
-    // deleteDoc( refDoc )
-  };
 
   return (
     <div className="div-form">
