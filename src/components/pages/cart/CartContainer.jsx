@@ -13,27 +13,29 @@ const CartContainer = () => {
 
       {cart.map((product) => {
         return (
-          <div
-            key={product.id}
-            style={{
-              border: "2px solid black",
-              width: "300px",
-              marginBottom: "10px",
-              padding: "10px",
-            }}
-          >
-            <h2>{product.title}</h2>
-            <h3>Cantidad: {product.quantity}</h3>
-            <button onClick={() => removeById(product.id)}>Eliminar</button>
+          <div key={product.id}>
+            <div className="div-producto">
+              <h2>{product.title}</h2>
+              <h3>Cantidad: {product.quantity}</h3>
+              <button
+                className="button-eliminar"
+                onClick={() => removeById(product.id)}
+              >
+                Eliminar
+              </button>
+            </div>
           </div>
         );
       })}
-
-      <button onClick={resetCart}>Limpiar carrito</button>
-      <h2>Total a abonar: $ {total}</h2>
-      <Link to="/checkout" style={{ color: "black" }}>
-        Finalizar compra
-      </Link>
+      <div className="div-finalizar">
+        <button className="button-limcarrito" onClick={resetCart}>
+          Limpiar carrito
+        </button>
+        <h2 className="total">Total a abonar: $ {total}</h2>
+        <Link className="button-limcarrito" to="/checkout">
+          Terminar compra
+        </Link>
+      </div>
     </div>
   );
 };

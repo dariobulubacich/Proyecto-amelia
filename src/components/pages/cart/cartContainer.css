@@ -2,3 +2,52 @@
   padding: 50px;
   text-align: center;
 }
+
+.div-producto {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #0a0a0a;
+  background-color: #f36282;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-eliminar {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f51c1c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.div-finalizar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.button-limcarrito {
+  padding: 10px 40px;
+  background-color: #33df10;
+  color: #141414;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-limcarrito:hover {
+  background-color: #adf09f;
+}
+
+.total {
+  font-size: 1.5em;
+  font-weight: bold;
+}
